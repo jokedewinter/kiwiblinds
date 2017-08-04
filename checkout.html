@@ -127,7 +127,7 @@
 					<div class="css3--select">
 						<select name="" id="" required="required">
 							<option value="" selected="selected">Choose Country</option>
-							<?php include($root . 'includes/countries.php'); ?>
+							<option label=".. Countries before the UK .." value="AA">.. Countries before the UK ..</option><option label="United Kingdom" value="GB" selected="selected">United Kingdom</option><option label=".. Countries after the UK .." value="ZZ">.. Countries after the UK ..</option>
 						</select>
 					</div><!-- .css3--select -->
 				</fieldset>
@@ -194,8 +194,12 @@
 						<label for="" id="">County (optional)</label>
 						<div class="css3--select">
 							<select name="" id="" required="required">
-								<option value="" selected="selected">Choose County</option>
-								<?php include($root . 'includes/counties.php'); ?>
+								<option value="" selected="selected">Choose County (optional)</option>
+								<optgroup label="England"><option label="EN" value="string:England">Counties in England</option></optgroup>
+								<optgroup label="Northern Ireland"><option label="NI" value="string:NorthernIreland">Counties in Northern Ireland</option></optgroup>
+								<optgroup label="Scotland"><option label="SC" value="string:Scotland">Counties in Scotland</option></optgroup>
+								<optgroup label="Unitary Authorities of Wales"><option label="WA" value="string:Wales">Counties in Wales</option></optgroup>
+								<optgroup label="UK Offshore Dependencies"><option label="CI" value="string:ChannelIslands">Counties in the Channel Islands</option><option label="Isle of Man" value="string:IsleofMan">Isle of Man</option></optgroup>
 							</select>
 						</div><!-- .css3--select -->
 					</div>
@@ -256,8 +260,6 @@
 					<li><a href="how-to-measure.html">How to measure</a></li>
 					<li><a href="fitting-instructions">Fitting instructions</a></li>
 					<li><a href="contact.html">Contact</a></li>
-					<li><a href="_patterns/index.html">Pattern Library</a></li>
-					<li><a href="checkout.html">Checkout</a></li>
 				</ul>
 			</nav><!-- .footer__nav -->
 	
@@ -271,7 +273,7 @@
 		
 		<div class="footer__legal">
 			<p>Copyright &copy; 2017 Kiwi Blinds</p>
-			<p><a href="terms-conditions.html">Terms & Conditions</a> | <a href="_patterns/index.html">Pattern Library</a></p>
+			<p><a href="terms-conditions.html">Terms & Conditions</a> | <a href="_patterns">Pattern Library</a></p>
 			<p class="jokedewinter"><a href="https://www.jokedewinter.co.uk" rel="external"><span class="screen-reader-text">Web design by Joke De Winter</span></a></p>
 		</div><!-- .footer__legal -->
 		
@@ -282,39 +284,6 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
 <script type="text/javascript" src="js/functions.min.js"></script>
-
-<!-- Slick slider for products on narrow viewports -->
-<script>
-( function( $ ) {
-
-	var viewport_width = $(window).width();
-	if ( viewport_width < 600 ) {
-	
-		$('.products').slick({
-			arrows: true,
-			infinite: true,
-			slidesToShow: 2,
-			variableWidth: true,
-			lazyLoad: 'progressive',
-			swipeToSlide: true,
-			prevArrow: '<button type="button" class="slick-prev"><span class="screen-reader-text">Previous</span></button>',
-			nextArrow: '<button type="button" class="slick-next"><span class="screen-reader-text">Next</span></button>',
-		});
-	
-	}
-	
-	$('.product__images').slick({
-		arrows: true,
-		slidesToShow: 1,
-		variableWidth: false,
-		lazyLoad: 'progressive',
-		swipeToSlide: true,
-		prevArrow: '<button type="button" class="slick-prev"><span class="screen-reader-text">Previous</span></button>',
-		nextArrow: '<button type="button" class="slick-next"><span class="screen-reader-text">Next</span></button>',
-	});
-	
-} )( jQuery );
-</script>
 
 </body>
 </html>
