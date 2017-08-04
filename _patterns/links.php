@@ -22,30 +22,31 @@
 		<p><a href="../index.html">Site</a></p>
 		<h3 class="pt__h3">Elements</h3>
 		<ul>
-			<li><a href="typography.html">Typography</a></li>
-			<li><a href="icons.html">Icons</a></li>
-			<li><a href="links.html">Links</a></li>
-			<li><a href="buttons.html">Buttons</a></li>
-			<li><a href="forms.html">Forms</a></li>
+			<li><a href="typography.php">Typography</a></li>
+			<li><a href="icons.php">Icons</a></li>
+			<li><a href="links.php">Links</a></li>
+			<li><a href="buttons.php">Buttons</a></li>
+			<li><a href="forms.php">Forms</a></li>
 		</ul>
 		<h3 class="pt__h3">Modules</h3>
 		<ul>
-			<li><a href="sidebar.html">Sidebar</a></li>
+			<li><a href="sidebar.php">Sidebar</a></li>
 		</ul>
 	</nav>
 	
 	<main class="pt__main" role="main">
-		
-		<div id="sidebar" class="pt__section">
-			<h1 class="pt__h1">Sidebar</h1>
-		
-			<div class="dddsite__content">
-				<?php echo file_get_contents('html/sidebar.html'); ?>
-				<pre><code><?php echo htmlspecialchars(file_get_contents('html/links.html')); ?></code></pre>
+
+		<div class="pt__section">
+			<h1 class="pt__h1">Links</h1>
+			<div class="site__content" style="margin-left: 0;">
+				<?php echo file_get_contents('html/links.html'); ?>
 			</div>
 		
+			<pre><code><?php echo htmlspecialchars(file_get_contents('html/links.html')); ?></code></pre>
+			<p class="pt__info">The style for inline links in paragraphs.</p>
+			<p class="pt__value">Poppins Bold / 18px / border-bottom 2px</p>
 		</div>
-	
+
 	</main>
 	
 </div><!-- .site -->

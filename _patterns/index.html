@@ -22,15 +22,15 @@
 		<p><a href="../index.html">Site</a></p>
 		<h3 class="pt__h3">Elements</h3>
 		<ul>
-			<li><a href="typography.html">Typography</a></li>
-			<li><a href="icons.html">Icons</a></li>
-			<li><a href="links.html">Links</a></li>
-			<li><a href="buttons.html">Buttons</a></li>
-			<li><a href="forms.html">Forms</a></li>
+			<li><a href="typography.php">Typography</a></li>
+			<li><a href="icons.php">Icons</a></li>
+			<li><a href="links.php">Links</a></li>
+			<li><a href="buttons.php">Buttons</a></li>
+			<li><a href="forms.php">Forms</a></li>
 		</ul>
 		<h3 class="pt__h3">Modules</h3>
 		<ul>
-			<li><a href="sidebar.html">Sidebar</a></li>
+			<li><a href="sidebar.php">Sidebar</a></li>
 		</ul>
 	</nav>
 	
