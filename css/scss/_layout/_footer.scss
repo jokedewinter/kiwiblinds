@@ -1,0 +1,55 @@
+
+/* Site footer
+ * ------------------------------------------------------------- */
+
+.site__footer {
+	clear: both;
+	margin-top: 2em;
+	padding-top: 2em;
+	border-top: 2px solid $col-border;
+	
+	p { margin-bottom: 0; }
+	li, p { @include font-size(16); }
+}
+
+.footer__legal {
+	padding-top: 2em;
+	margin-top: 2em;
+	border-top: 2px solid $col-border;
+	p:first-of-type { font-weight: 700; }
+}
+
+@include viewport(small) {
+	
+	.footer__info {
+		nav {
+			padding-bottom: 2em;
+			margin-bottom: 2em;
+			border-bottom: 2px solid $col-border;
+		}
+		
+		img { margin-top: 1em; }
+	}
+
+	.footer__legal p:nth-of-type(2) { margin-bottom: 2em; }
+}
+
+@include viewport(medium) {
+
+	.footer__info {
+		overflow: hidden;
+
+		nav, div { float: left; }
+		nav { width: 25%; }
+		div { width: 50%; }
+		img {float: right; }
+	}
+}
+
+/* Colophon author
+ * ------------------------------------------------------------- */
+
+.jokedewinter a { width: 75px; height: 30px; display: block; background: url('../images/jokedewinter.svg'); border-bottom: none; }
+.jokedewinter a:hover { border-bottom: none; }
+
+@include viewport(medium) { .jokedewinter { display: inline-block; float: right; } }

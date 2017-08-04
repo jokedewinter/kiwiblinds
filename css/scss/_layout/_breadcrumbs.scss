@@ -1,0 +1,23 @@
+
+/* Site breadcrumbs
+ * ------------------------------------------------------------- */
+
+.site__breadcrumbs { 
+	clear: both;
+	margin-bottom: 2em; 
+	
+	ol {		
+		li {
+			display: inline-block;
+			
+			&:nth-child(n+2):before {
+				content: '/';
+				display: block;
+				float: left;
+				vertical-align: middle;
+				margin-right: 0.5em;
+			}
+		}
+	}
+}
+

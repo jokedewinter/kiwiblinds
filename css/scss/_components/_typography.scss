@@ -1,0 +1,69 @@
+/**
+ * ------------------------------------------------------------- 
+ * Typography
+ * ------------------------------------------------------------- */
+
+/* Unsightly hyphenation going on various devices/browsers. Don't want it. */
+
+* {
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	hyphens: none;
+}
+
+/* Headings
+ * ------------------------------------------------------------- */
+
+h1, h2, h3 {
+	clear: both;
+
+	/* HACK: Unsightly hyphenation going on in Firefox. Don't want it. */
+	-moz-hyphens: none !important;
+}
+
+h1, h2, h3 {
+	font-weight: 700;
+	margin-bottom: 1em;	
+	line-height: 1.2;
+}
+
+h1 { @include font-size(36); }
+h2 { @include font-size(24); }
+
+h3 {
+	@include font-size(14);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+/* Text
+ * ------------------------------------------------------------- */
+
+p {
+	@include font-size(18);
+	margin-bottom: 1em;
+	
+	+ h1, + h2, + h4 { margin-top: 2em; }
+}
+
+b, strong { font-weight: 700; }
+em, i { @include font-italic(); }
+
+/* Lists
+ * ------------------------------------------------------------- */
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+	@include font-size(18);
+}
+
+/* Other tags
+ * ------------------------------------------------------------- */
+
+hr {
+	background-color: $col-border;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}

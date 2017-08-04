@@ -1,0 +1,37 @@
+
+/* Sidebar menu
+ * ------------------------------------------------------------- */
+
+.site__sidebar {
+	
+	margin-bottom: 2em;
+	ul { @include no-bullets(); }
+	
+			li { 
+				border-bottom: 1px solid $col-border; 
+				
+				a {
+					display: block;
+					width: 100%;
+					padding: 0.5em 0.1em; 
+					
+					&:hover {
+						font-weight: 600;
+						color: $col-brand;
+					}
+				}
+				
+				&:last-of-type { border-bottom: none; }
+			}
+			
+	
+	
+	.parent {
+		@include font-size(24);
+		font-weight: 700;
+		border-bottom: none;
+	}
+
+	/* For the Fitting Instructions */
+	li + li.parent { margin-top: 1em; }
+}

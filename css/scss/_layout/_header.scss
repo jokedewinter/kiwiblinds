@@ -1,0 +1,29 @@
+
+/* Site header
+ * ------------------------------------------------------------- */
+
+.site__header {
+	margin: 1em 0;
+	padding-bottom: 1em;
+	
+	form {
+		float: right;
+		margin-top: -0.5em;
+	}
+}
+
+@include viewport(small) { .site__header h1 { width: 100%; } }
+
+@include viewport(medium) {
+
+	.site__header {
+		
+		* { display: inline-block; }
+		a { margin-right: 1.5em; }
+
+		div {
+			float: right;
+			margin-top: 2.2em;
+		}
+	}
+}

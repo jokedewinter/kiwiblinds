@@ -1,0 +1,76 @@
+
+/* Paging
+ * ------------------------------------------------------------- */
+
+[class*='paging__'] ul {
+	@include no-bullets();
+	margin: 0;
+	
+	li { display: inline-block; }
+}
+
+.paging {
+	width: 100%;
+	float: left;
+	margin-bottom: 2em;
+	
+	+ * { clear: both; }
+}
+
+/* Paging view
+ * ------------------------------------------------------------- */
+
+.paging__view {
+	p {
+		float: left;
+		margin-right: 1em;
+	}
+	
+	li { @include list-with-stripes(); }
+	
+	a {
+		border-bottom: none;
+		font-weight: 400;
+	}
+}
+		
+/* Paging results
+ * ------------------------------------------------------------- */
+
+@include viewport(small) { .paging__results { clear: both; } }
+
+@media screen and ( min-width: 37.50em)  {
+	
+	.paging__results {
+		clear: none;
+		float: right;
+	}
+}
+		
+/* Paging nav
+ * ------------------------------------------------------------- */
+
+.paging__nav {
+	text-align: right;
+	
+	a {
+		margin-right: 0.5em;
+		border-bottom: none;
+		&:hover .svg__icon { fill: $col-brand; }
+	}
+	
+	li:not(:first-child):not(:last-child) a {
+		
+		width: 2em;
+		display: block;
+		border: 1px solid $col-border;
+		padding: 0.4em;
+		text-align: center;
+		
+		&.current {
+			background: $col-brand;
+			border-color: $col-brand;
+			color: $col-text-reverse;
+		}
+	}
+}

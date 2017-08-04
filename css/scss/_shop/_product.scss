@@ -1,0 +1,57 @@
+
+/* Product classes
+ * ------------------------------------------------------------- */
+
+.reference {
+	@include font-size(14);
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: $col-text-light;
+}
+
+
+/* Single Product description
+ * ------------------------------------------------------------- */
+
+.product__title h1 { margin-bottom: 0.1em; }
+
+.product__details {
+	@include no-bullets();
+	li { padding-bottom: 0.3em; }
+}
+
+.product__images {
+	max-width: 20em;
+	float: left;
+	margin-right: 5%;
+}
+
+@include viewport(medium) {
+	.product__description {
+		width: 100%;
+		float: left;
+	}
+	
+	.product__title,
+	.product__details {
+		@include grid-column(4);
+		float: right;
+	}
+
+	.product__images { @include grid-column(2); }
+}
+
+/* Single Product form
+ * ------------------------------------------------------------- */
+
+.product__form { clear: both; }
+
+.product__price p {
+	@include font-size(24);
+	font-weight: 700;
+	display: inline-block;
+	margin: 0 1em 0 0;
+}
+
+@include viewport(large) { .product__form { @include grid-push(2); } }

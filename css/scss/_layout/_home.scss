@@ -1,0 +1,93 @@
+
+/* Home general content
+ * ------------------------------------------------------------- */
+
+
+.home .site__main {
+	
+	img { margin-bottom: 2em; }
+	
+	[class*='button'] {
+		display: inline-block;
+		margin-bottom: 0.5em;
+	}
+}
+
+@include viewport(medium) {
+	
+	.home {
+		.site__main > *:not(.hero):not(.stockists):not(img) {
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 50%;
+		}
+		
+		h2 {
+			@include font-size(60);
+			font-weight: 300;
+		}
+	}
+}
+
+/* Home hero
+ * ------------------------------------------------------------- */
+
+.hero {
+	
+	h1 span {
+		display: block;
+		font-weight: 300;
+	}
+	
+	p:first-of-type { margin-bottom: 0; }
+}	
+
+@include viewport(small) { .hero h1 { @include font-size(32); } }
+
+@include viewport(medium) {
+	
+	.hero {
+		
+		text-align: center;
+
+		h1 { @include font-size(64); }
+		
+		p {
+			@include font-size(24);
+			font-weight: 300;
+			margin-bottom: 1em;
+			text-align: center;
+		}
+	}
+}
+
+/* Stockists logos
+ * ------------------------------------------------------------- */
+
+.stockists {
+	@include no-bullets();
+	float: left;
+	margin: 2em 0;
+	
+	.home & {
+		text-align: center;
+	
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+
+		li {
+			display: inline-block;
+			padding: 0 0.5em;
+			align-self: center;
+		}
+	}
+
+	.has-sidebar & li {
+		display: block;
+		padding: 0 0.5em;
+		margin-bottom: 2em;
+	}
+}
+
+@include viewport(medium) { .stockists li { margin-bottom: 1em;	} }

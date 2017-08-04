@@ -1,0 +1,130 @@
+
+/* Links
+ * ------------------------------------------------------------- */
+
+a {
+	position: relative;
+	text-decoration: none;
+	color: $col-text;
+	cursor: pointer;
+
+	&:hover {
+		color: $col-brand;
+	}
+}
+
+.site__content a {
+	font-weight: 700;
+	border-bottom: 2px solid $col-text;
+	
+	&:hover { border-color: $col-brand; }
+}
+
+/* 
+The hover effect when mousing over.
+Both for a and a span because sometimes the hover colour for the border sits inside a span.
+There, now you know why. 
+
+(Still a bit of a delay between the border changing and the link, but hey, so what?)
+*/
+a,
+a span { @include transition (all, 0.7s, ease-in-out); }
+
+/* Current page links in navigation
+ * ------------------------------------------------------------- */
+
+.current { color: $col-brand; }
+
+
+/* Links with icons
+ * ------------------------------------------------------------- */
+
+a[class*='link--'] {
+	font-weight: 400;
+	border-bottom: none;
+}
+
+[class*='link--']:before {
+	content: '';
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	vertical-align: bottom;
+	margin-right: 0.5em;
+}
+
+.link--cart:before { background: url('../images/svg/cart.svg') no-repeat; }
+.link--location:before { background: url('../images/svg/location.svg') no-repeat; }
+.link--mail:before { background: url('../images/svg/mail.svg') no-repeat; }
+.link--phone:before { background: url('../images/svg/phone.svg') no-repeat; }
+
+/* Buttons
+ * ------------------------------------------------------------- */
+
+[class*='button'] {
+	padding: 0.5em 1em;
+	border-bottom: none !important;
+	background-color: $col-brand;
+	cursor: pointer;
+	
+	@include font-body();
+	@include font-size(16);
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: $col-text-reverse !important; /* If this class is attached to an a element */
+	
+	&:hover { background-color: lighten($col-brand, 5%); }
+}
+
+[class*='button'].colour--dark { 
+	background-color: $col-brand-dark; 
+	&:hover { background-color: lighten($col-brand-dark, 10%); }
+}
+
+[class*='button'].colour--text { 
+	background-color: $col-text; 
+	&:hover { background-color: lighten($col-text, 10%); }
+}
+
+[class*='button--']:before {
+	content: '';
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	vertical-align: middle;
+	margin-right: 0.5em;
+	
+	/* This does not work in IE and Edge */
+	background-color: $col-text-reverse;
+}
+
+.button--arrow:before {
+	/* This does not work in IE and Edge */
+    -webkit-mask-image: url('../images/svg/arrow-right.svg');
+    mask-image: url('../images/svg/arrow-right.svg');
+}
+
+.button--cart:before {
+	/* This does not work in IE and Edge */
+    -webkit-mask-image: url('../images/svg/cart-reverse.svg');
+    mask-image: url('../images/svg/cart-reverse.svg');
+}
+
+/* Close link for review form and cart summary
+ * ------------------------------------------------------------- */
+
+.close {
+	float: right;
+	@include font-size(12);
+	font-weight: 400 !important;
+	text-transform: none;
+	border-color: $col-text-light !important;
+	color: $col-text-light !important;
+		
+	&:target {
+		height: 0;
+		opacity: 0;
+		@include transition(all, 0.3s, ease);
+	}
+}

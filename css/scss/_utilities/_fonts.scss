@@ -1,0 +1,7 @@
+
+@mixin font-body() { font-family: 'Poppins', Verdana, Helvetica, Arial, sans-serif; }
+
+@mixin font-italic() { 
+	font-family: Verdana, Helvetica, Arial, sans-serif; 
+	font-style: italic;
+}

@@ -1,0 +1,151 @@
+
+/* Site Navigation
+ * ------------------------------------------------------------- */
+
+.site__navigation { 
+	clear: both;
+	margin-bottom: 2em; 
+	border-bottom: 2px solid $col-border;
+}
+
+/* Menu toggle
+ * ------------------------------------------------------------- */
+
+@include viewport(small) {
+
+	.nav__toggle {
+		width: 100%;
+		display: block;
+		padding: 1em 0;
+		@include font-size(16);
+		font-weight: 600;
+		text-align: left;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		cursor: pointer;		
+	}
+
+	.nav__toggle:hover,
+	.nav__toggle:focus,
+	.nav__toggle:active {
+		color: $col-brand;
+	}
+
+	.nav__toggle:before {
+		content: '\2630'; /* Hamburger */
+		position: relative;
+		margin-right: 0.3em;
+		display: inline-block;
+		@include font-size(16);
+		vertical-align: bottom;
+		font-weight: 600;
+	}
+	
+	.toggled-on .nav__toggle:before { content: '\2715'; /* Cross */ }
+
+	/* The basic hide/show stuff */
+	.nav__menu { display: none; }
+	.toggled-on .nav__menu { display: block; }
+}
+
+@include viewport(medium) { .nav__toggle { display: none; } }
+
+
+/* Narrow viewport navigation styles
+ * ------------------------------------------------------------- */
+
+@include viewport(small) {
+	
+	.site__navigation { 
+		width: 100%; 
+		border-top: 2px solid $col-border;
+		
+		.nav__menu {
+		
+			padding: 0.5em 0;
+			
+			li { 
+				border-bottom: 1px solid $col-border; 
+				
+				a {
+					display: block;
+					width: 100%;
+					padding: 0.5em 0.1em; 
+					
+					&:hover {
+						font-weight: 600;
+						color: $col-brand;
+					}
+				}
+				
+				&:last-of-type { border-bottom: none; }
+			}
+		}
+	}
+}
+
+/* Wider viewport navigation styles
+ * ------------------------------------------------------------- */
+
+@include viewport(medium) {
+
+	.nav__menu {
+	
+		li {
+			display: inline-block;
+			margin: 0 0.5em 1.2em 0;
+		}
+		
+		a {
+			@include font-size(16);
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			padding: 0.5em 1em 0.5em 0.1em;
+		}
+	}
+}
+
+
+/* Search form
+ * ------------------------------------------------------------- */
+
+.site__search {
+	
+	margin-top: 0.5em;
+
+	label {
+		display: inline-block;
+		background: url('../images/svg/search.svg') no-repeat left top;
+		width: 28px;
+		height: 28px;
+		margin-top: -1px;
+	}
+	
+	input {
+		width: calc( 100% - 38px );
+		@include font-body();
+		@include font-size(16);
+		color: $col-text;
+		
+		/* Undoing some stuff to input elements in forms.scss */
+		border: none;
+		padding: 0;
+	}
+}
+
+@include viewport(medium) {
+
+	.site__search {
+		padding: 0.4em;
+		border: 1px solid $col-border;
+
+		label { float: right; }
+		input { text-align: right; }
+	}
+}
+
+@include viewport(large) {
+	.nav__menu li:last-of-type { float: right; }
+	.site__search { margin-top: -0.5em; 	}
+}

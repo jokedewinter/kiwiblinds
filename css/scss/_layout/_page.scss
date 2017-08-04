@@ -1,0 +1,83 @@
+
+/* Content structure
+ * ------------------------------------------------------------- */
+
+.site__content article {
+	margin-bottom: 2em;
+
+	img { margin: 1em 0; }
+}
+
+@include viewport(small) {
+
+	.has-sidebar .site__main {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	
+	.site__sidebar {
+		margin-top: 3em;
+		padding-top: 2em;
+		border-top: 2px solid $col-border;
+	}
+}
+
+@include viewport(medium) {
+	.site__sidebar {
+		width: 20%;
+		float: left;
+		
+		+ .site__content { margin-left: 5%; }
+	}
+	
+	body:not(.cart):not(.checkout) .site__content {
+		width: 75%;
+		display: inline-block;
+	}
+}
+
+/* Layout modules
+ * ------------------------------------------------------------- */
+
+@include viewport(large) {
+	
+	.float-image {
+		float: left;
+		
+		h2 { width: 100%; }	
+		
+		p {
+			width: 45%;
+			margin-right: 5%;
+			float: left;
+		}
+		
+		img {
+			width: 45%;
+			clear: none;
+			float: right;
+			margin-top: -1em !important;
+		}
+	}
+	
+	.two-columns {
+		float: left;
+		
+		h2,
+		h2 + p { width: 100%; }
+		
+		div {
+			width: 45%;
+			float: left;
+			margin-right: 5%;
+		}
+	}
+	
+	.left-column,
+	.right-column {
+		width: 45%;
+		float: left;
+		margin: 2em 5% 0 0;
+		padding-right: 2em;
+	}
+}

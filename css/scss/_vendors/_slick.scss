@@ -1,0 +1,117 @@
+/**
+ * -------------------------------------------------------------------------------------------------
+ * Slick carousel
+ * URL: http://kenwheeler.github.io/slick/
+ * -------------------------------------------------------------------------------------------------
+ */
+
+/* Slider mechanics
+ * ------------------------------------------------------------- */
+
+.slick-slider {
+    position: relative;
+    display: block;
+    margin-bottom: 3em;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;   
+}
+
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    &:focus { outline: none; }
+
+    &.dragging {
+        cursor: pointer;
+        cursor: hand;
+    }
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+
+    &:after { clear: both; }
+
+    .slick-loading & { visibility: hidden; }
+}
+
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    
+    [dir="rtl"] & { float: right; }
+    img { display: block; }
+    &.slick-loading img { display: none; }
+
+    display: none;
+
+    &.dragging img { pointer-events: none; }
+    .slick-initialized & { display: block; }
+    .slick-loading & { visibility: hidden; }
+
+    .slick-vertical & {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+}
+
+.slick-arrow.slick-hidden { display: none; }
+
+/* Slide navigation
+ * ------------------------------------------------------------- */
+
+.slick-prev,
+.slick-next {
+	position: absolute;
+	top: 95%;
+	display: block;
+	cursor: pointer;
+	z-index: 10;
+}
+
+.slick-prev { left: 0; }
+.slick-next { right: 0; }
+
+.slick-prev:before,
+.slick-next:before {
+	content: "";
+	display: block;
+	width: 28px;
+	height: 28px;
+	background-repeat: no-repeat;
+}
+
+.slick-prev:before { background-image: url('../images/svg/arrow-left.svg'); }
+.slick-next:before { background-image: url('../images/svg/arrow-right.svg'); }

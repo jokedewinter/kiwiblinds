@@ -1,0 +1,126 @@
+
+/* Shopping cart item
+ * ------------------------------------------------------------- */
+
+.cart__item {
+	width: 100%;
+	float: left;
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+	border-bottom: 1px solid $col-border;
+}
+
+.cart__item--product h2 {
+	@include font-size(18);
+	margin-bottom: 0.5em;
+}
+
+a.remove {
+	font-weight: 400;
+	@include font-size(14);
+	border-bottom-width: 1px;
+}
+
+.quantity__price span,
+.quantity__amount label,
+.quantity__total span {
+	display: block;
+	margin: 0 0 0.5em 0;
+	@include font-size(14);
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: $col-text-light;
+}
+
+.quantity__amount input {
+	width: 5em;
+	padding-right: 0.3em;
+	text-align: right;
+}
+
+@include viewport(medium) {
+	
+	.cart__form {
+	
+		.cart__item--product { @include grid-column(3); }
+	
+		.quantity__price,
+		.quantity__amount,
+		.quantity__total {
+			text-align: right;
+			@include grid-column(1);
+		}
+		
+		.quantity__total { 
+			float: right;
+			margin-right: 0;
+		}
+	}
+}
+
+/* Shopping cart total
+ * ------------------------------------------------------------- */
+
+.cart__checkout {
+
+	[class*='amount--'] {
+		text-align: right;
+		padding-bottom: 0.5em;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		
+		clear: both;
+	}
+	
+	span {
+		width: 12em;
+		display: inline-block;
+		text-align: left;
+		float: left;
+	}
+	
+	.continue {
+		display: inline-block;
+		margin: 0 0 2em 1em;
+		
+		a {
+			@include font-size(16);
+			font-weight: 400;
+			border-color: $col-text-light;
+			color: $col-text-light;
+		}
+	}
+}
+
+.amount--item {
+	@include font-size(14);
+	font-weight: 600;
+	
+	&:first-of-type { margin-top: 2em; }
+}
+
+.amount--total {
+	padding-top: 1em;
+	font-weight: 700;
+	border-top: 1px solid $col-text;
+}
+
+.checkout--buy {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1em;
+	
+	.cart__form & { justify-content: flex-end; }
+	img { margin: 0.1em 1em 0 0; }
+}
+
+@include viewport(medium) {
+	
+	.cart__form .cart__checkout { 
+		@include grid-column(3); 
+		@include grid-push(3); 
+		margin-right: 0;
+		float: right;
+	}
+}
