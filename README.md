@@ -9,7 +9,10 @@ Version: v1
 Description
 -------------------------------------------------------------------------------------
 Front-end design and code for Kiwi Blinds & Curtains
+
 View site: https://jokedewinter.github.io/kiwiblinds/
+
+View patterns: https://jokedewinter.github.io/kiwiblinds/patterns/index.html
 
 -------------------------------------------------------------------------------------
 Resources
