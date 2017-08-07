@@ -3,13 +3,13 @@
 -------------------------------------------------------------------------------------
 
 Author: Joke De Winter
-Author URI: http://www.jokedewinter.co.uk
 Version: v1
 
 -------------------------------------------------------------------------------------
 Description
 -------------------------------------------------------------------------------------
 Front-end design and code for Kiwi Blinds & Curtains
+View site: https://jokedewinter.github.io/kiwiblinds/
 
 -------------------------------------------------------------------------------------
 Resources
