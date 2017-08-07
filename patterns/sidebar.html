@@ -39,11 +39,29 @@
 		<div id="sidebar" class="pt__section">
 			<h1 class="pt__h1">Sidebar</h1>
 		
-			<div class="dddsite__content">
-				<?php echo file_get_contents('html/sidebar.html'); ?>
-				<pre><code><?php echo htmlspecialchars(file_get_contents('html/links.html')); ?></code></pre>
-			</div>
-		
+			<aside class="site__sidebar">
+			    <ul>
+			        <li class="parent"><a href="{{page}}">Parent page</a></li>
+			        <li><a href="{{page}}">Child Page</a></li>
+			        <li><a href="{{page}}">Child Page</a></li>
+			        <li><a class="current" href="{{page}}">Child Page</a></li>
+			        <li><a href="{{page}}">Child Page</a></li>
+			        <li><a href="{{page}}">Child Page</a></li>
+			    </ul>
+			</aside>
+			
+			<textarea class="pt__code">
+				<aside class="site__sidebar">
+				    <ul>
+				        <li class="parent"><a href="{{page}}">Parent page</a></li>
+				        <li><a href="{{page}}">Child Page</a></li>
+				        <li><a href="{{page}}">Child Page</a></li>
+				        <li><a class="current" href="{{page}}">Child Page</a></li>
+				        <li><a href="{{page}}">Child Page</a></li>
+				        <li><a href="{{page}}">Child Page</a></li>
+				    </ul>
+				</aside>
+			</textarea>		
 		</div>
 	
 	</main>

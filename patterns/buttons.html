@@ -41,20 +41,38 @@
 			<p class="pt__info">There are two types of buttons: with an icon and without one. The colour of the button can vary too.</p>
 			
 			<h2 class="pt__h2">Plain</h2>
-		    <?php echo file_get_contents('html/buttons-plain.html'); ?>
-		    <pre><code><?php echo htmlspecialchars(file_get_contents('html/buttons-plain.html')); ?></code></pre>
+		    <button class="button">Button</button>
+			<a class="button" href="">Link</a>
+			<input class="button" type="submit" value="Submit">
+		    <textarea class="pt__code">
+		    	<button class="button">Button</button>
+				<a class="button" href="">Link</a>
+				<input class="button" type="submit" value="Submit">
+			</textarea>
 		
 			<h2 class="pt__h2">Dark colour</h2>
-		    <?php echo file_get_contents('html/buttons-dark.html'); ?>
-		    <pre><code><?php echo htmlspecialchars(file_get_contents('html/buttons-dark.html')); ?></code></pre>
+		    <button class="button colour--dark">Button</button>
+			<a class="button colour--dark" href="">Link</a>
+			<input class="button colour--dark" type="submit" value="Submit">
+		    <textarea class="pt__code">
+			    <button class="button colour--dark">Button</button>
+				<a class="button colour--dark" href="">Link</a>
+				<input class="button colour--dark" type="submit" value="Submit">
+			</textarea>
 		
 			<h2 class="pt__h2">Text colour</h2>
-		    <?php echo file_get_contents('html/buttons-text.html'); ?>
-		    <pre><code><?php echo htmlspecialchars(file_get_contents('html/buttons-text.html')); ?></code></pre>
+		    <input class="button colour--text" type="submit" value="Send">
+		    <textarea class="pt__code"><input class="button colour--text" type="submit" value="Send"></textarea>
 		
 			<h2 class="pt__h2">With icons</h2>
-		    <?php echo file_get_contents('html/buttons-icon.html'); ?>
-			<pre><code><?php echo htmlspecialchars(file_get_contents('html/buttons-icon.html')); ?></code></pre>
+		    <button class="button--cart">Cart {{0}}</button>
+			<a class="button--cart" href="">Link</a>
+			<input class="button--cart" type="submit" value="Submit">
+			<textarea class="pt__code">
+				<button class="button--cart">Cart {{0}}</button>
+				<a class="button--cart" href="">Link</a>
+				<input class="button--cart" type="submit" value="Submit">
+			</textarea>
 		
 		</div>
 
