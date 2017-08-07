@@ -7,7 +7,7 @@
 					<li><a href="<?php echo $root; ?>how-to-measure.html">How to measure</a></li>
 					<li><a href="<?php echo $root; ?>fitting-instructions">Fitting instructions</a></li>
 					<li><a href="<?php echo $root; ?>contact.html">Contact</a></li>
-					<li><a href="<?php echo $root; ?>/_patterns">Pattern Library</a></li>
+					<li><a href="<?php echo $root; ?>/patterns">Pattern Library</a></li>
 					<li><a href="<?php echo $root; ?>checkout.html">Checkout</a></li>
 				</ul>
 			</nav><!-- .footer__nav -->
@@ -22,7 +22,7 @@
 		
 		<div class="footer__legal">
 			<p>Copyright &copy; 2017 Kiwi Blinds</p>
-			<p><a href="<?php echo $root; ?>terms-conditions.html">Terms & Conditions</a> | <a href="/_patterns">Pattern Library</a></p>
+			<p><a href="<?php echo $root; ?>terms-conditions.html">Terms & Conditions</a> | <a href="/patterns">Pattern Library</a></p>
 			<p class="jokedewinter"><a href="https://www.jokedewinter.co.uk" rel="external"><span class="screen-reader-text">Web design by Joke De Winter</span></a></p>
 		</div><!-- .footer__legal -->
 		

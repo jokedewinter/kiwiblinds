@@ -429,154 +429,154 @@
 		"oAP": "\/_includes\/reviews.php",
 		"oF": 0
 		},
-	"\/_patterns\/body-classes.txt": {
+	"\/patterns\/body-classes.txt": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/_patterns\/body-classes.txt",
+		"oAP": "\/patterns\/body-classes.txt",
 		"oF": 0
 		},
-	"\/_patterns\/buttons.php": {
+	"\/patterns\/buttons.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/_patterns\/buttons.php",
+		"oAP": "\/patterns\/buttons.php",
 		"oF": 0
 		},
-	"\/_patterns\/forms.php": {
+	"\/patterns\/forms.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/_patterns\/forms.php",
+		"oAP": "\/patterns\/forms.php",
 		"oF": 0
 		},
-	"\/_patterns\/html\/buttons-dark.html": {
+	"\/patterns\/html\/buttons-dark.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/_patterns\/html\/buttons-dark.html",
+		"oAP": "\/patterns\/html\/buttons-dark.html",
 		"oF": 0
 		},
-	"\/_patterns\/html\/buttons-icon.html": {
+	"\/patterns\/html\/buttons-icon.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/_patterns\/html\/buttons-icon.html",
+		"oAP": "\/patterns\/html\/buttons-icon.html",
 		"oF": 0
 		},
-	"\/_patterns\/html\/buttons-plain.html": {
+	"\/patterns\/html\/buttons-plain.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/_patterns\/html\/buttons-plain.html",
+		"oAP": "\/patterns\/html\/buttons-plain.html",
 		"oF": 0
 		},
-	"\/_patterns\/html\/buttons-text.html": {
+	"\/patterns\/html\/buttons-text.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/_patterns\/html\/buttons-text.html",
+		"oAP": "\/patterns\/html\/buttons-text.html",
 		"oF": 0
 		},
-	"\/_patterns\/html\/forms-checkbox.html": {
+	"\/patterns\/html\/forms-checkbox.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/_patterns\/html\/forms-checkbox.html",
+		"oAP": "\/patterns\/html\/forms-checkbox.html",
 		"oF": 0
 		},
-	"\/_patterns\/html\/forms-radio.html": {
+	"\/patterns\/html\/forms-radio.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/_patterns\/html\/forms-radio.html",
+		"oAP": "\/patterns\/html\/forms-radio.html",
 		"oF": 0
 		},
-	"\/_patterns\/html\/forms-select.html": {
+	"\/patterns\/html\/forms-select.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/_patterns\/html\/forms-select.html",
+		"oAP": "\/patterns\/html\/forms-select.html",
 		"oF": 0
 		},
-	"\/_patterns\/html\/icons-cart.html": {
+	"\/patterns\/html\/icons-cart.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/_patterns\/html\/icons-cart.html",
+		"oAP": "\/patterns\/html\/icons-cart.html",
 		"oF": 0
 		},
-	"\/_patterns\/html\/icons-location.html": {
+	"\/patterns\/html\/icons-location.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/_patterns\/html\/icons-location.html",
+		"oAP": "\/patterns\/html\/icons-location.html",
 		"oF": 0
 		},
-	"\/_patterns\/html\/icons-mail.html": {
+	"\/patterns\/html\/icons-mail.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/_patterns\/html\/icons-mail.html",
+		"oAP": "\/patterns\/html\/icons-mail.html",
 		"oF": 0
 		},
-	"\/_patterns\/html\/icons-phone.html": {
+	"\/patterns\/html\/icons-phone.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/_patterns\/html\/icons-phone.html",
+		"oAP": "\/patterns\/html\/icons-phone.html",
 		"oF": 0
 		},
-	"\/_patterns\/html\/links.html": {
+	"\/patterns\/html\/links.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/_patterns\/html\/links.html",
+		"oAP": "\/patterns\/html\/links.html",
 		"oF": 0
 		},
-	"\/_patterns\/html\/sidebar.html": {
+	"\/patterns\/html\/sidebar.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/_patterns\/html\/sidebar.html",
+		"oAP": "\/patterns\/html\/sidebar.html",
 		"oF": 0
 		},
-	"\/_patterns\/html\/typography-h1.html": {
+	"\/patterns\/html\/typography-h1.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/_patterns\/html\/typography-h1.html",
+		"oAP": "\/patterns\/html\/typography-h1.html",
 		"oF": 0
 		},
-	"\/_patterns\/html\/typography-h2.html": {
+	"\/patterns\/html\/typography-h2.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/_patterns\/html\/typography-h2.html",
+		"oAP": "\/patterns\/html\/typography-h2.html",
 		"oF": 0
 		},
-	"\/_patterns\/html\/typography-h3.html": {
+	"\/patterns\/html\/typography-h3.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/_patterns\/html\/typography-h3.html",
+		"oAP": "\/patterns\/html\/typography-h3.html",
 		"oF": 0
 		},
-	"\/_patterns\/html\/typography-p.html": {
+	"\/patterns\/html\/typography-p.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/_patterns\/html\/typography-p.html",
+		"oAP": "\/patterns\/html\/typography-p.html",
 		"oF": 0
 		},
-	"\/_patterns\/icons.php": {
+	"\/patterns\/icons.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/_patterns\/icons.php",
+		"oAP": "\/patterns\/icons.php",
 		"oF": 0
 		},
-	"\/_patterns\/index.html": {
+	"\/patterns\/index.html": {
 		"ft": 8192,
 		"oA": 1,
-		"oAP": "\/_patterns\/index.html",
+		"oAP": "\/patterns\/index.html",
 		"oF": 0
 		},
-	"\/_patterns\/links.php": {
+	"\/patterns\/links.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/_patterns\/links.php",
+		"oAP": "\/patterns\/links.php",
 		"oF": 0
 		},
-	"\/_patterns\/sidebar.php": {
+	"\/patterns\/sidebar.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/_patterns\/sidebar.php",
+		"oAP": "\/patterns\/sidebar.php",
 		"oF": 0
 		},
-	"\/_patterns\/typography.php": {
+	"\/patterns\/typography.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/_patterns\/typography.php",
+		"oAP": "\/patterns\/typography.php",
 		"oF": 0
 		},
 	"\/accessories\/index.html": {
