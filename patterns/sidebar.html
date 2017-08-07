@@ -36,7 +36,7 @@
 	
 	<main class="pt__main" role="main">
 		
-		<div id="sidebar" class="pt__section">
+		<div class="pt__section">
 			<h1 class="pt__h1">Sidebar</h1>
 		
 			<aside class="site__sidebar">
@@ -44,24 +44,22 @@
 			        <li class="parent"><a href="{{page}}">Parent page</a></li>
 			        <li><a href="{{page}}">Child Page</a></li>
 			        <li><a href="{{page}}">Child Page</a></li>
-			        <li><a class="current" href="{{page}}">Child Page</a></li>
+			        <li><a href="{{page}}" class="current">Child Page</a></li>
 			        <li><a href="{{page}}">Child Page</a></li>
 			        <li><a href="{{page}}">Child Page</a></li>
 			    </ul>
 			</aside>
 			
-			<textarea class="pt__code">
-				<aside class="site__sidebar">
-				    <ul>
-				        <li class="parent"><a href="{{page}}">Parent page</a></li>
-				        <li><a href="{{page}}">Child Page</a></li>
-				        <li><a href="{{page}}">Child Page</a></li>
-				        <li><a class="current" href="{{page}}">Child Page</a></li>
-				        <li><a href="{{page}}">Child Page</a></li>
-				        <li><a href="{{page}}">Child Page</a></li>
-				    </ul>
-				</aside>
-			</textarea>		
+			<textarea class="pt__code" rows="10"><aside class="site__sidebar">
+    <ul>
+        <li class="parent"><a href="{{page}}">Parent page</a></li>
+        <li><a href="{{page}}">Child Page</a></li>
+        <li><a href="{{page}}">Child Page</a></li>
+        <li><a class="current" href="{{page}}">Child Page</a></li>
+        <li><a href="{{page}}">Child Page</a></li>
+        <li><a href="{{page}}">Child Page</a></li>
+    </ul>
+</aside></textarea>		
 		</div>
 	
 	</main>

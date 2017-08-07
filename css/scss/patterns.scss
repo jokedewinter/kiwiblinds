@@ -128,18 +128,20 @@ Version: 1.0
 /* Code blocks
  * ------------------------------------------------------------- */
 
+.pt__code,
 .pt__section pre {
 	clear: both;
 	width: 100%;
 	float: left;
 	margin: 1em 0 2em 0;
 	
-	padding: 0.5em 1em;
+	padding: 0.5em 1em 0 1em;
 	background: #eee;
 	border: 1px solid #ddd;
 	color: #6e757d;
 }
 
+.pt__code,
 .pt__section pre,
 .pt__section code {
 	font-family: Monaco, monospace;
