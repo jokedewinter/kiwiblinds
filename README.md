@@ -3,6 +3,7 @@
 -------------------------------------------------------------------------------------
 
 Author: Joke De Winter
+
 Version: v1
 
 -------------------------------------------------------------------------------------
@@ -19,18 +20,25 @@ Resources
 -------------------------------------------------------------------------------------
 Images are the clients copyright.
 
-# Fonts
+## Fonts
 Poppins Font: Copyright 2014-2017 Indian Type Foundry (info@indiantypefoundry.com)
+
 License: SIL Open Font License, 1.1
+
 Source: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
 
-# Javascript
+## Javascript
 HTML5 Shiv v3.7.0, Copyright 2014 Alexander Farkas
+
 Licenses: MIT/GPL2
+
 Source: https://github.com/aFarkas/html5shiv
 
+
 Respond.js, Copyright 2001 Scott Jehl
+
 License: MIT License
+
 Source:https://opensource.org/licenses/MIT
 
 -------------------------------------------------------------------------------------
