@@ -28,7 +28,7 @@ textarea {
 
 .reviews__form fieldset:last-of-type { margin: 1em 0; }
 
-.checkout__form fieldset {
+fieldset {
 	margin: 0 0 1em 0;
 	
 	> div {
@@ -75,7 +75,7 @@ label {
 
 /* Input fields & Textarea
  * ------------------------------------------------------------- */
-input:not([type="submit"]),
+input,
 textarea {
 	padding: 0.3em 1em;
 	border: 1px solid $col-border;
