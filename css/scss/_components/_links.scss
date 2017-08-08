@@ -106,6 +106,8 @@ a[class*='link--'] {
 }
 
 .button--cart:before {
+	background-image: url('../images/svg/cart-reverse.svg');
+	background-color: transparent;
 	/* This does not work in IE and Edge */
     -webkit-mask-image: url('../images/svg/cart-reverse.svg');
     mask-image: url('../images/svg/cart-reverse.svg');
