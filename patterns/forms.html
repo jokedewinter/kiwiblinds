@@ -39,6 +39,47 @@
 		<div class="pt__section">
 			<h1 class="pt__h1">Form elements</h1>
 			
+			<!-- Input element -->
+			<h2 class="pt__h2">Input element</h2>
+			<p class="pt__info">Enclose an input field inside a <code>fieldset</code> element. Validation errors have a <code>form__error</code> class.</p> 
+			<fieldset>
+				<label for="" id="">Label for text input field</label>
+				<input type="text" name="" id="" value="" required="required">
+			</fieldset>
+
+			<textarea class="pt__code" rows="4"><fieldset>
+    <label for="" id="">Label for text input field</label>
+    <input type="text" name="" id="" value="" required="required">
+    <p class="form__error">{{ Validation erro message }}</p>
+</fieldset></textarea>
+
+			<!-- Input elements -->
+			<p class="pt__info">With multiple input boxes on one line, surround each separate label/input combo in a <code>div</code></p> 
+			<fieldset>
+				<div>
+					<label for="" id="">Label for text input field</label>
+					<input type="text" name="" id="" value="" required="required">					
+				</div>
+				<div>
+					<label for="" id="">Label for text email field</label>
+					<input type="email" name="" id="" value="">
+				</div>
+			</fieldset>
+
+			<textarea class="pt__code" rows="10"><fieldset>
+    <div>
+        <label for="" id="">Label for text input field</label>
+        <input type="text" name="" id="" value="" required="required">
+        <p class="form__error">{{ Validation erro message }}</p>
+    </div>
+    <div>
+        <label for="" id="">Label for text email field</label>
+        <input type="email" name="" id="" value="">
+        <p class="form__error">{{ Validation erro message }}</p>
+    </div>
+</fieldset></textarea>
+
+			<!-- Radio buttons -->
 			<h2 class="pt__h2">Radio buttons</h2>
 			<p class="pt__info">Use an unordered list with a <code>.css3--radio</code> class. Use list elements for each radio button option.</p> 
 		    <ul class="css3--radio">
@@ -60,6 +101,7 @@
     </li>
 </ul></textarea>
 		
+			<!-- Checkboxes -->
 			<h2 class="pt__h2">Checkboxes</h2>
 			<p class="pt__info">Use an unordered list with a <code>.css3--checkbox</code> class. Use list elements for each checkbox button option.</p> 
 			<ul class="css3--checkbox">
@@ -81,6 +123,7 @@
     </li>
 </ul></textarea>
 		
+			<!-- Select box -->
 			<h2 class="pt__h2">Select box</h2>
 			<p class="pt__info">Enclose the select element inside a div with a <code>.css3--select</code> class.</p> 
 		    <div class="css3--select">
@@ -99,6 +142,43 @@
 </div></textarea>
 		</div>
 
+			<!-- Star rating -->
+			<h2 class="pt__h2">Star rating</h2>
+			<fieldset>
+				<label>Rating</label>
+				<span class="rating--stars">
+					<input id="star-5" type="radio" value="5" name="star"><label for="star-5"><svg class="svg__icon"><use xlink:href="#empty-star" /></svg></label>
+					<input id="star-4" type="radio" value="4" name="star"><label for="star-4"><svg class="svg__icon"><use xlink:href="#empty-star" /></svg></label>
+					<input id="star-3" type="radio" value="3" name="star"><label for="star-3"><svg class="svg__icon"><use xlink:href="#empty-star" /></svg></label>
+					<input id="star-2" type="radio" value="2" name="star"><label for="star-2"><svg class="svg__icon"><use xlink:href="#empty-star" /></svg></label>
+					<input id="star-1" type="radio" value="1" name="star"><label for="star-1"><svg class="svg__icon"><use xlink:href="#empty-star" /></svg></label>
+				</span>
+			</fieldset>
+			<textarea class="pt__code" rows="16"><fieldset>
+        <label>Rating</label>
+        <span class="rating--stars">
+        <input id="star-5" type="radio" value="5" name="star">
+        <label for="star-5"><svg class="svg__icon"><use xlink:href="#empty-star" /></svg></label>
+        <input id="star-4" type="radio" value="4" name="star">
+        <label for="star-4"><svg class="svg__icon"><use xlink:href="#empty-star" /></svg></label>
+        <input id="star-3" type="radio" value="3" name="star">
+        <label for="star-3"><svg class="svg__icon"><use xlink:href="#empty-star" /></svg></label>
+        <input id="star-2" type="radio" value="2" name="star">
+        <label for="star-2"><svg class="svg__icon"><use xlink:href="#empty-star" /></svg></label>
+        <input id="star-1" type="radio" value="1" name="star">
+        <label for="star-1"><svg class="svg__icon"><use xlink:href="#empty-star" /></svg></label>
+    </span>
+    <p class="form__error">Please choose a rating</p>
+</fieldset></textarea>
+
+			<!-- Submit button -->
+			<h2 class="pt__h2">Submit buttons</h2>
+			<p class="pt__info">A sumbit has to have a <code>button</code> class, and an optional colour class.</p> 
+			<input class="button" type="submit" name="checkout" value="Standard button">
+			<input class="button colour--text" type="submit" name="submit" value="Text colour button">
+			
+			<textarea class="pt__code" rows="2"><input class="button" type="submit" name="checkout" value="Standard button">
+<input class="button colour--text" type="submit" name="submit" value="Text colour button"></textarea>
 	</main>
 	
 </div><!-- .site -->
