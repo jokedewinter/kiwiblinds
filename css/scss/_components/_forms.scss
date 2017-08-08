@@ -255,6 +255,8 @@ textarea {
 /* Input submit buttons
  * ------------------------------------------------------------- */
 
+input[type="submit"] { border: none; }
+
 input.button--cart {
 	background-image: url('../images/svg/cart-reverse.svg'); 
     background-repeat: no-repeat; 
