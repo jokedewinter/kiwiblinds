@@ -14,7 +14,7 @@ Version: 1.0
 	font-size: 18px;
 	text-align: left;
 	background: #fff;
-	color: #333;
+	color: #333;	
 }
 
 /* Layout
@@ -96,9 +96,9 @@ Version: 1.0
 .pt__h1,
 .pt__h2,
 .pt__info,
-.pt__value {
-	font-family: Courier, cursive;
-}
+.pt__value,
+.pt__nav,
+.pt__masthead { font-family: Courier, cursive; }
 
 .pt__h1 {
 	font-size: 18px;
