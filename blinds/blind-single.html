@@ -102,6 +102,12 @@
 		
 		<section id="content" class="site__content product">
 			
+	
+			<div class="product__images">
+				<img src="../assets/sample-01.jpg" alt="Sample">
+				<img src="../assets/sample-04.jpg" alt="Sample">
+			</div><!-- .product__images -->
+
 			<article class="product__description">
 	
 				<div class="product__title">
@@ -109,96 +115,91 @@
 					<p class="reference">{{ Product Reference }}</p>
 				</div><!-- .product__title -->
 				
-				<div class="product__images">
-					<img src="../assets/sample-01.jpg" alt="Sample">
-					<img src="../assets/sample-04.jpg" alt="Sample">
-				</div><!-- .product__images -->
-			
 				<ul class="product__details">
 					<li>{{ Optional description }}</li>
 					<li><strong>Design:</strong> {{ Optional description }}</li>
 					<li><strong>Colour:</strong> {{ Optional description }}</li>
 					<li><strong>Composition:</strong> {{ Optional description }}</li>
 				</ul><!-- .product__details -->
+				
+				<form action="" id="" class="product__form" method="post" novalidate="novalidate">
+				
+					<fieldset class="product__price">
+						<p>£{{ Price }}</p>
+						<input class="button--cart" type="submit" name="submit" value="Add To Cart">
+					</fieldset>
+		
+					<fieldset class="product__choice">
+						<div class="css3--select">
+							<select class="" id="" name="">
+								<option selected="selected" value="">Select Unit</option>
+								<option value="">mm</option>
+								<option value="">cm</option>
+							</select>
+						</div>			
+						
+						<p class="form__error">Please select a unit</p>
+					</fieldset>
+					
+					<fieldset class="product__choice">
+						<label>Measuring Option</label>
+						<ul class="css3--radio">
+							<li><label><input id="" name="" type="radio" value="Exact"><span>Exact</span></label></li>			
+							<li><label><input checked="checked" id="" name="" type="radio" value="Recess"><span>Recess</span></label></li>
+						</ul>
+									
+						<p class="form__error">Please select a measuring Option</p>
+					</fieldset>
+					
+					<fieldset class="product__choice">
+						<label>Width</label>
+						<input autocomplete="off" id="" name="" size="4" placeholder="50" type="text" value="50">
+		  
+					    <p class="form__error">Please provide a width measurement</p>
+					</fieldset>
+					
+					<fieldset class="product__choice">
+						<label>Drop</label>
+			            <input autocomplete="off" id="" name="" size="4" placeholder="90" type="text" value="90">
+						
+						<p class="form__error">Please provide a drop measurement</p>
+					</fieldset>
+					
+					<fieldset class="product__choice">
+						<label>Select Control Side</label>
+						<ul class="css3--radio">
+							<li><label><input id="" name="" type="radio" value="Left"><span>Left</span></label></li>
+							<li><label><input checked="checked" id="" name="" type="radio" value="Right"><span>Right</span></label></li>
+						</ul>
+											
+						<p class="form__error">Please select a control side</p>
+					</fieldset>
+					
+					<fieldset class="product__choice">
+						<label>Select Stack Side</label>
+						<ul class="css3--radio">
+							<li><label><input id="" name="" type="radio" value="Left"><span>Left</span></label></li>
+							<li><label><input checked="checked" id="" name="" type="radio" value="Right"><span>Right</span></label></li>
+							<li><label><input id="" name="" type="radio" value="Split"><span>Split</span></label></li>
+						</ul>
+											
+						<p class="form__error">Please select a stack side</p>
+					</fieldset>
+					
+					<fieldset class="product__choice">
+						<label>Quantity</label>
+						<input autocomplete="off" id="" name="" size="4" placeholder="1" type="text" value="1">
+											
+						<p class="form__error">Please provide a quantity</p>
+					</fieldset>
+					
+					<fieldset class="product__submit">
+						<input class="button--cart colour--dark" type="submit" name="submit" value="Order Sample">
+					</fieldset>
+				</form>
 	
 			</article><!-- .product__description -->
-	
-			<form action="" id="" class="product__form" method="post" novalidate="novalidate">
-			
-				<fieldset class="product__price">
-					<p>£{{ Price }}</p>
-					<input class="button--cart" type="submit" name="submit" value="Add To Cart">
-				</fieldset>
-	
-				<fieldset class="product__choice">
-					<div class="css3--select">
-						<select class="" id="" name="">
-							<option selected="selected" value="">Select Unit</option>
-							<option value="">mm</option>
-							<option value="">cm</option>
-						</select>
-					</div>			
-					
-					<p class="form__error">Please select a unit</p>
-				</fieldset>
-				
-				<fieldset class="product__choice">
-					<label>Measuring Option</label>
-					<ul class="css3--radio">
-						<li><label><input id="" name="" type="radio" value="Exact"><span>Exact</span></label></li>			
-						<li><label><input checked="checked" id="" name="" type="radio" value="Recess"><span>Recess</span></label></li>
-					</ul>
-								
-					<p class="form__error">Please select a measuring Option</p>
-				</fieldset>
-				
-				<fieldset class="product__choice">
-					<label>Width</label>
-					<input autocomplete="off" id="" name="" size="4" placeholder="50" type="text" value="50">
-	  
-				    <p class="form__error">Please provide a width measurement</p>
-				</fieldset>
-				
-				<fieldset class="product__choice">
-					<label>Drop</label>
-		            <input autocomplete="off" id="" name="" size="4" placeholder="90" type="text" value="90">
-					
-					<p class="form__error">Please provide a drop measurement</p>
-				</fieldset>
-				
-				<fieldset class="product__choice">
-					<label>Select Control Side</label>
-					<ul class="css3--radio">
-						<li><label><input id="" name="" type="radio" value="Left"><span>Left</span></label></li>
-						<li><label><input checked="checked" id="" name="" type="radio" value="Right"><span>Right</span></label></li>
-					</ul>
-										
-					<p class="form__error">Please select a control side</p>
-				</fieldset>
-				
-				<fieldset class="product__choice">
-					<label>Select Stack Side</label>
-					<ul class="css3--radio">
-						<li><label><input id="" name="" type="radio" value="Left"><span>Left</span></label></li>
-						<li><label><input checked="checked" id="" name="" type="radio" value="Right"><span>Right</span></label></li>
-						<li><label><input id="" name="" type="radio" value="Split"><span>Split</span></label></li>
-					</ul>
-										
-					<p class="form__error">Please select a stack side</p>
-				</fieldset>
-				
-				<fieldset class="product__choice">
-					<label>Quantity</label>
-					<input autocomplete="off" id="" name="" size="4" placeholder="1" type="text" value="1">
-										
-					<p class="form__error">Please provide a quantity</p>
-				</fieldset>
-				
-				<fieldset class="product__submit">
-					<input class="button--cart colour--dark" type="submit" name="submit" value="Order Sample">
-				</fieldset>
-			</form>
-	
+
 			<!-- START REVIEW SECTION -->
 
 			<section class="reviews">
@@ -346,11 +347,10 @@
 	var viewport_width = $(window).width();
 	if ( viewport_width < 600 ) {
 	
-		$('.products').slick({
+		$('.product__images').slick({
 			arrows: true,
-			infinite: true,
-			slidesToShow: 2,
-			variableWidth: true,
+			slidesToShow: 1,
+			variableWidth: false,
 			lazyLoad: 'progressive',
 			swipeToSlide: true,
 			prevArrow: '<button type="button" class="slick-prev"><span class="screen-reader-text">Previous</span></button>',
@@ -358,16 +358,6 @@
 		});
 	
 	}
-	
-	$('.product__images').slick({
-		arrows: true,
-		slidesToShow: 1,
-		variableWidth: false,
-		lazyLoad: 'progressive',
-		swipeToSlide: true,
-		prevArrow: '<button type="button" class="slick-prev"><span class="screen-reader-text">Previous</span></button>',
-		nextArrow: '<button type="button" class="slick-next"><span class="screen-reader-text">Next</span></button>',
-	});
 	
 } )( jQuery );
 </script>

@@ -18,6 +18,7 @@
 
 .product__details {
 	@include no-bullets();
+	clear: b;
 	li { padding-bottom: 0.3em; }
 }
 
@@ -28,18 +29,13 @@
 }
 
 @include viewport(medium) {
-	.product__description {
-		width: 100%;
-		float: left;
-	}
 	
-	.product__title,
-	.product__details {
+	.product__images { @include grid-column(2); }
+	
+	.product__description {
 		@include grid-column(4);
 		float: right;
 	}
-
-	.product__images { @include grid-column(2); }
 }
 
 /* Single Product form
@@ -53,5 +49,3 @@
 	display: inline-block;
 	margin: 0 1em 0 0;
 }
-
-@include viewport(large) { .product__form { @include grid-push(2); } }
