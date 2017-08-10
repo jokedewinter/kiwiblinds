@@ -36,17 +36,10 @@ Version: 1.0
 	line-height: 1.2;
 }
 
-.pt__nav {
-	float: left;
-	width: 25%;
-	margin: 1em 0;
-	color: #333;
-}
-
-.pt__main {
-	float: right;
-	width: 70%;
-	margin: 1em 0 1em 5%;
+.pt__nav,
+.pt__main { 
+	clear: both;
+	overflow: hidden;
 }
 
 .pt__section {
@@ -66,15 +59,24 @@ Version: 1.0
  * ------------------------------------------------------------- */
 
 .pt__nav {
+	
+	h3 {
+		display: inline-block;
+		float: left;
+		width: 8em;
+		margin-top: 0.5em;
+	}
+	
 	ul {
 		list-style-type: none;
-		margin: 0 0 2em 0;
-		padding: 0;
+		padding: 0 0 1em 0;
+		display: inline-block;
+		float: left;
 	}
 	
 	li {
-		padding: 0.4em 0;
-		border-bottom: 1px solid #ccc;
+		display: inline-block;
+		margin-right: 1em;
 	}
 
 	a {
