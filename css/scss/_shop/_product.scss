@@ -22,11 +22,7 @@
 	li { padding-bottom: 0.3em; }
 }
 
-.product__images {
-	max-width: 20em;
-	float: left;
-	margin-right: 5%;
-}
+.product__images img { margin-bottom: 2em; }
 
 @include viewport(medium) {
 	
