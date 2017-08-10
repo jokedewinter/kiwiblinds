@@ -12,7 +12,23 @@
 	}
 }
 
-@include viewport(small) { .site__header h1 { width: 100%; } }
+@include viewport(small) { 
+	.site__header {
+	
+		h1 { width: 100%; } 
+		
+		.link--phone {
+			margin-right: 1em;
+			&:before { vertical-align: text-bottom; }
+		}
+		
+		form {
+			float: none;
+			display: inline-block;
+			margin-top: 1em;
+		}
+	}
+}
 
 @include viewport(medium) {
 
