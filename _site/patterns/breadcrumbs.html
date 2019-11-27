@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]><html id="ie" class="no-js" lang="en-GB"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js"  lang="en-GB"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Breadcrumbs | Pattern library | Kiwi Blinds</title>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="../css/screen.min.css">
+	<link rel="stylesheet" href="../css/patterns.min.css">
+</head>
+
+<body class="pt">
+
+<!-- The SVG sprite -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><symbol id="home" viewBox="0 0 28 28"><title>Home</title><path d="M22.9 15.2c.07.1.1.2.1.33 0 .12-.06.22-.15.3-.1.1-.2.13-.32.12-.13 0-.23-.05-.3-.14l-1.93-2.1v7.2c0 .38-.13.7-.4.96-.26.26-.58.4-.95.4h-9.9c-.37 0-.7-.14-.96-.4-.27-.27-.4-.58-.4-.95v-7.2l-1.92 2.1c-.04.06-.1.1-.15.12-.06.02-.12.04-.18.04-.05 0-.1 0-.16-.03-.06-.02-.1-.05-.15-.1-.1-.08-.14-.18-.15-.3 0-.13.03-.23.1-.33l7.96-8.78c.12-.14.27-.24.43-.3.15-.08.32-.12.5-.12s.35.04.5.1c.18.08.32.18.44.32l7.95 8.78zm-7.1 6.15V17.3c0-.12-.04-.23-.13-.3-.1-.1-.2-.15-.32-.15h-2.7c-.13 0-.23.05-.32.14-.1.07-.13.18-.13.3v4.05h3.6zm3.6-.44v-8.2l-5.13-5.68-.12-.1L14 6.9c-.05 0-.1 0-.14.03-.05.02-.1.05-.13.1L8.6 12.7v8.2c0 .13.05.23.14.32.08.1.2.13.3.13h2.26V17.3c0-.37.13-.68.4-.95.26-.26.58-.4.95-.4h2.7c.37 0 .7.14.95.4.27.27.4.58.4.95v4.05h2.25c.12 0 .23-.04.32-.13.08-.1.13-.2.13-.3z" fill="#404348" fill-rule="evenodd"/></symbol></svg>
+
+<div class="pt__site">
+
+	<h1 class="pt__masthead" role="banner">Kiwi Blinds patterns and styleguide</h1>
+
+	<nav class="pt__nav" role="navigation" aria-label="Main menu">
+		<p><a href="../index.html">Site</a></p>
+		<h3 class="pt__h3">Elements</h3>
+		<ul>
+			<li><a href="typography.html">Typography</a></li>
+			<li><a href="icons.html">Icons</a></li>
+			<li><a href="links.html">Links</a></li>
+			<li><a href="buttons.html">Buttons</a></li>
+			<li><a href="forms.html">Forms</a></li>
+		</ul>
+		<h3 class="pt__h3">Modules</h3>
+		<ul>
+			<li><a href="masthead.html">Masthead</a></li>
+			<li><a href="navigation.html">Navigation</a></li>
+			<li><a href="breadcrumbs.html">Breadcrumbs</a></li>
+			<li><a href="sidebar.html">Sidebar</a></li>
+			<li><a href="footer.html">Footer</a></li>
+	</nav>
+	
+	<main class="pt__modules" role="main">
+		
+		<div class="pt__section">
+			<h1 class="pt__h1">Breadcrumbs</h1>
+			<p class="pt__info">The <code>a</code> element of the current page needs to be class 'current' and 'aria-current="page"'	</p>
+			<nav class="site__breadcrumbs" aria-label="Breadcrumb">
+				<ol>
+					<li><a href=""><span class="screen-reader-text">Home</span><svg class="svg__icon"><use xlink:href="#home" /></svg></a></li>
+					<li><a href="">{{ Parent page }}</a></li>
+					<li><a href="" class="current" aria-current="page">{{ Current page }}</a></li>
+				</ol>
+			</nav><!-- .site__breadcrumbs -->
+
+			<textarea class="pt__code" rows="9"><nav class="site__breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href=""><span class="screen-reader-text">Home</span><svg class="svg__icon"><use xlink:href="#home" /></svg></a></li>
+        <li><a href="">{{ Parent page }}</a></li>
+        <li><a href="" class="current" aria-current="page">{{ Current page }}</a></li>
+    </ol>
+</nav><!-- .site__breadcrumbs --></textarea>		
+		</div>
+	
+	</main>
+	
+</div><!-- .site -->
+
+</body>
+</html>

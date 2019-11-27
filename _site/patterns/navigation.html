@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]><html id="ie" class="no-js" lang="en-GB"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js"  lang="en-GB"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Navigation | Pattern library | Kiwi Blinds</title>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="../css/screen.min.css">
+	<link rel="stylesheet" href="../css/patterns.min.css">
+</head>
+
+<body class="pt">
+
+<div class="pt__site">
+
+	<h1 class="pt__masthead" role="banner">Kiwi Blinds patterns and styleguide</h1>
+
+	<nav class="pt__nav" role="navigation" aria-label="Main menu">
+		<p><a href="../index.html">Site</a></p>
+		<h3 class="pt__h3">Elements</h3>
+		<ul>
+			<li><a href="typography.html">Typography</a></li>
+			<li><a href="icons.html">Icons</a></li>
+			<li><a href="links.html">Links</a></li>
+			<li><a href="buttons.html">Buttons</a></li>
+			<li><a href="forms.html">Forms</a></li>
+		</ul>
+		<h3 class="pt__h3">Modules</h3>
+		<ul>
+			<li><a href="masthead.html">Masthead</a></li>
+			<li><a href="navigation.html">Navigation</a></li>
+			<li><a href="breadcrumbs.html">Breadcrumbs</a></li>
+			<li><a href="sidebar.html">Sidebar</a></li>
+			<li><a href="footer.html">Footer</a></li>
+		</ul>
+	</nav>
+	
+	<main class="pt__modules" role="main">
+		
+		<div class="pt__section">
+			<h1 class="pt__h1">Navigation</h1>
+			<p class="pt__info">The <code>a</code> element of the current page needs to be class 'current' and 'aria-current="page"'</p>
+			<nav class="site__navigation" role="navigation" aria-label="Main Menu">
+				<button id="nav__toggle" class="nav__toggle">Menu</button>
+				
+				<ul class="nav__menu">
+					<li><a href="fabrics">Fabrics</a></li>
+					<li><a href="blinds">Blinds</a></li>
+					<li><a href="louvres">Louvres</a></li>
+					<li><a href="wallpaper">Wallpaper</a></li>
+					<li><a href="accessories">Accessories &amp; Parts</a></li>
+				
+					<li>
+						<form class="site__search" action="search.php" method="post" novalidate="novalidate">
+							<label for="searchString"><span class="screen-reader-text">Search</span></label>
+							<input class="site__search" placeholder="Search" id="searchString" name="searchString" type="text" value="" autocomplete="off">
+							<button type="submit" value="Search" title="Search" id="btnSearch" name="submit"></button>
+						</form>
+					</li>
+				</ul>
+			</nav><!-- .site__navigation -->
+
+			<textarea class="pt__code" rows="18"><nav class="site__navigation" role="navigation" aria-label="Main Menu">
+    <button id="nav__toggle" class="nav__toggle">Menu</button>
+    <ul class="nav__menu">
+        <li><a href="fabrics">Fabrics</a></li>
+        <li><a href="blinds">Blinds</a></li>
+        <li><a href="louvres">Louvres</a></li>
+        <li><a href="wallpaper">Wallpaper</a></li>
+        <li><a href="accessories">Accessories &amp; Parts</a></li>
+        <li>
+            <form class="site__search" action="search.php" method="post" novalidate="novalidate">
+                <label for="searchString"><span class="screen-reader-text">Search</span></label>
+                <input class="site__search" placeholder="Search" id="searchString" name="searchString" type="text" value="" autocomplete="off">
+                <button type="submit" value="Search" title="Search" id="btnSearch" name="submit"></button>
+            </form>
+        </li>
+    </ul>
+</nav><!-- .site__navigation --></textarea>		
+		</div>
+	
+	</main>
+	
+</div><!-- .site -->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+<script type="text/javascript" src="../js/functions.min.js"></script>
+
+</body>
+</html>
