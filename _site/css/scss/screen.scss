@@ -1,0 +1,63 @@
+/*
+Kiwi Blinds & Curtains
+
+Author: Joke De Winter Ltd
+Author URI: https://www.jokedewinter.co.uk
+Description: Front-end styles for Kiwi Blinds & Curtains
+Version: 1.0
+*/
+
+@import "_utilities/mixins";
+@import "_utilities/colors";
+@import "_utilities/fonts";
+@import "_utilities/grid";
+@import "_utilities/reset";
+
+/**
+ * -------------------------------------------------------------
+ Site settings
+ * ------------------------------------------------------------- */
+
+@import "_base/site";
+
+/**
+ * -------------------------------------------------------------
+ Components
+ * ------------------------------------------------------------- */
+
+@import "_components/typography";
+@import "_components/links";
+@import "_components/images";
+@import "_components/forms";
+
+/**
+ * -------------------------------------------------------------
+ Layout
+ * ------------------------------------------------------------- */
+
+@import "_layout/header";
+@import "_layout/navigation";
+@import "_layout/breadcrumbs";
+@import "_layout/sidebar";
+@import "_layout/footer";
+@import "_layout/home";
+@import "_layout/page";
+
+/**
+ * -------------------------------------------------------------
+ Shop
+ * ------------------------------------------------------------- */
+
+@import "_shop/paging";
+@import "_shop/products";
+@import "_shop/product";
+@import "_shop/reviews";
+@import "_shop/cart";
+@import "_shop/checkout";
+
+/**
+ * -------------------------------------------------------------
+ Vendors
+ * ------------------------------------------------------------- */
+
+@import "_vendors/slick";

@@ -1,0 +1,4 @@
+pages with sidebar menu: has-sidebar
+cart page: cart
+checkout page: checkout
+home page: home

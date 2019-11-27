@@ -1,0 +1,159 @@
+/*
+Pattern library styles
+Author: Joke De Winter Ltd
+Author URI: http://www.jokedewinter.co.uk
+Version: 1.0
+*/
+
+/* Site settings
+ * ------------------------------------------------------------- */
+
+.pt {
+	text-align: center;
+	line-height: 1.5;
+	font-size: 18px;
+	text-align: left;
+	background: #fff;
+	color: #333;	
+}
+
+/* Layout
+ * ------------------------------------------------------------- */
+
+.pt__site {
+	width: 90%;
+	max-width: 60em;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.pt__masthead {
+	clear: both;
+	width: 100%;
+	float: left;
+	margin: 0.5em 0;
+	line-height: 1.2;
+}
+
+.pt__nav,
+.pt__main { 
+	clear: both;
+	overflow: hidden;
+}
+
+.pt__section {
+	float: left;
+	width: 100%;
+	margin-top: 2em;
+	padding-top: 2em;
+	border-top: 1px solid #ccc;
+	
+	.pt__pattern &:first-child {
+		border-color: #333;
+		border-width: 2px;
+	}
+}
+
+/* Navigation
+ * ------------------------------------------------------------- */
+
+.pt__nav {
+	
+	h3 {
+		display: inline-block;
+		float: left;
+		width: 8em;
+		margin-top: 0.5em;
+	}
+	
+	ul {
+		list-style-type: none;
+		padding: 0 0 1em 0;
+		display: inline-block;
+		float: left;
+	}
+	
+	li {
+		display: inline-block;
+		margin-right: 1em;
+	}
+
+	a {
+		text-transform: capitalize;
+		text-decoration: none;
+		color: #333;
+	}
+	
+	a:hover {
+		color: #ccc;
+	}
+}
+
+/* Typography
+ * ------------------------------------------------------------- */
+
+.pt__h1,
+.pt__h2,
+.pt__info,
+.pt__value,
+.pt__nav,
+.pt__masthead { font-family: Courier, cursive; }
+
+.pt__h1 {
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: peru;
+}
+
+.pt__h2 {
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 1em;
+	color: #999;
+}
+
+.pt__info {
+	font-size: 18px;
+}
+
+.pt__value {
+	font-size: 16px;
+	color: #aaa;
+}
+
+
+/* Code blocks
+ * ------------------------------------------------------------- */
+
+.pt__code,
+.pt__section pre {
+	clear: both;
+	width: 100%;
+	float: left;
+	margin: 1em 0 2em 0;
+	
+	padding: 0.5em 1em 0 1em;
+	background: #eee;
+	border: 1px solid #ddd;
+	color: #6e757d;
+}
+
+.pt__code,
+.pt__section pre,
+.pt__section code {
+	font-family: Monaco, monospace;
+	font-size: 1.4rem;
+	line-height: 1.8;
+	overflow: auto;
+	word-wrap: normal;	
+}
+
+.pt__info code {
+	color: peru;
+	font-weight: bold;
+}
