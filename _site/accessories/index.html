@@ -39,7 +39,7 @@
 				<img src="../images/kiwi-logo.jpg" alt="Kiwi logo" />
 			</a>
 		</h1>
-		
+
 		<div>
 			<a class="link--phone" href="tel:01509269397">01509 269397</a>
 			<form action="../cart.html" method="post">
@@ -50,7 +50,7 @@
 
 	<nav class="site__navigation" role="navigation" aria-label="Main Menu">
 		<button id="nav__toggle" class="nav__toggle">Menu</button>
-		
+
 		<!-- The <a> element of the current page needs to be class 'current' and 'aria-current="page"' -->
 		<ul class="nav__menu">
 			<li><a href="../fabrics">Fabrics</a></li>
@@ -58,7 +58,7 @@
 			<li><a href="../louvres">Louvres</a></li>
 			<li><a href="../wallpaper">Wallpaper</a></li>
 			<li><a href="../accessories" aria-current="page" class="current">Accessories &amp; Parts</a></li>
-		
+
 			<li>
 				<form class="site__search" action="search.php" method="post" novalidate="novalidate">
 					<label for="searchString"><span class="screen-reader-text">Search</span></label>
@@ -68,10 +68,10 @@
 			</li>
 		</ul>
 	</nav><!-- .site__navigation -->
-	
+
 	<!-- END HEADER -->
 	<!-- START BREADCRUMBS -->
-	
+
 	<nav class="site__breadcrumbs" aria-label="Breadcrumb">
 		<!-- The <a> element of the current page needs to be class 'current' and 'aria-current="page"' -->
 		<ol>
@@ -85,7 +85,7 @@
 	<!-- START MAIN CONTENT -->
 
 	<main id="main" class="site__main" role="main">
-		
+
 		<aside class="site__sidebar">
 			<!-- The <a> element of the current page needs to be class 'current' -->
 			<ul>
@@ -96,11 +96,11 @@
 				<li><a href="index.html">Metropole</a></li>
 			</ul>
 		</aside>
-		
+
 		<section id="content" class="site__content">
-			
+
 			<h1>{{ Page title }}</h1>
-			
+
 			<div class="paging">
 				<div class="paging__view">
 					<p>View:</p>
@@ -108,12 +108,12 @@
 						<li><a class="current" href="">All</a></li>
 					</ul>
 				</div><!-- .paging__view -->
-				
+
 				<div class="paging__results">
 					<p>Results {{ start }} to {{ end }} of {{ total }}</p>
 				</div><!-- .paging__results -->
 			</div><!-- .paging -->
-			
+
 			<ul class="products">
 				<li>
 					<a href="">
@@ -124,16 +124,16 @@
 					</a>
 				</li>
 			</ul>
-		
+
 		</section><!-- .site__content -->
-	
+
 	</main><!-- #main -->
 
 	<!-- END MAIN CONTENT -->
 	<!-- START FOOTER -->
 
 	<footer id="colophon" class="site__footer" role="contentinfo">
-	
+
 		<div class="footer__info">
 			<nav role="navigation" aria-label="Footer Menu">
 				<ul>
@@ -142,17 +142,17 @@
 					<li><a href="../contact.html">Contact</a></li>
 				</ul>
 			</nav><!-- .footer__nav -->
-	
+
 			<div>
 				<p><a class="link--phone" href="tel:01509269397">01509 269397</a></p>
 				<p class="link--location">29 Moira Street, Loughborough, LE11 1AX</p>
 			</div>
-			
+
 			<img src="../images/geotrust.jpg" alt="Geo Trust Secured website">
 		</div><!-- .footer__info -->
-		
-		<!-- 
-		The Pattern Library, Cart and Checkout links are only here for easy access to those pages to 
+
+		<!--
+		The Pattern Library, Cart and Checkout links are only here for easy access to those pages to
 		test the CSS styling. The final website version should only have the Terms & Conditions link.
 		-->
 		<div class="footer__legal">
@@ -160,7 +160,7 @@
 			<p><a href="../terms-conditions.html">Terms & Conditions</a> | <a href="../patterns/index.html">Pattern Library</a> | <a href="../cart.html">Cart</a> | <a href="../checkout.html">Checkout</a></p>
 			<p class="jokedewinter"><a href="https://www.jokedewinter.co.uk" rel="external"><span class="screen-reader-text">Web design by Joke De Winter</span></a></p>
 		</div><!-- .footer__legal -->
-		
+
 	</footer><!-- .site__footer -->
 
 </div><!-- .site -->
@@ -175,7 +175,7 @@
 
 	var viewport_width = $(window).width();
 	if ( viewport_width < 600 ) {
-	
+
 		$('.products').slick({
 			arrows: true,
 			infinite: true,
