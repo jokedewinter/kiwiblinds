@@ -39,7 +39,7 @@
 				<img src="../images/kiwi-logo.jpg" alt="Kiwi logo" />
 			</a>
 		</h1>
-
+		
 		<div>
 			<a class="link--phone" href="tel:01509269397">01509 269397</a>
 			<form action="../cart.html" method="post">
@@ -50,7 +50,7 @@
 
 	<nav class="site__navigation" role="navigation" aria-label="Main Menu">
 		<button id="nav__toggle" class="nav__toggle">Menu</button>
-
+		
 		<!-- The <a> element of the current page needs to be class 'current' and 'aria-current="page"' -->
 		<ul class="nav__menu">
 			<li><a href="../fabrics">Fabrics</a></li>
@@ -58,7 +58,7 @@
 			<li><a href="../louvres">Louvres</a></li>
 			<li><a href="../wallpaper">Wallpaper</a></li>
 			<li><a href="../accessories">Accessories &amp; Parts</a></li>
-
+		
 			<li>
 				<form class="site__search" action="search.php" method="post" novalidate="novalidate">
 					<label for="searchString"><span class="screen-reader-text">Search</span></label>
@@ -68,10 +68,10 @@
 			</li>
 		</ul>
 	</nav><!-- .site__navigation -->
-
+	
 	<!-- END HEADER -->
 	<!-- START BREADCRUMBS -->
-
+	
 	<nav class="site__breadcrumbs" aria-label="Breadcrumb">
 		<!-- The <a> element of the current page needs to be class 'current' and 'aria-current="page"' -->
 		<ol>
@@ -86,7 +86,7 @@
 	<!-- START MAIN CONTENT -->
 
 	<main id="main" class="site__main" role="main">
-
+		
 		<aside class="site__sidebar">
 			<!-- The <a> element of the current page needs to be class 'current' -->
 			<ul>
@@ -99,36 +99,36 @@
 				<li><a href="index.html">Vertical Blinds</a></li>
 			</ul>
 		</aside>
-
+		
 		<section id="content" class="site__content product">
-
-
+			
+	
 			<div class="product__images">
 				<img src="../assets/sample-01.jpg" alt="Sample">
 				<img src="../assets/sample-04.jpg" alt="Sample">
 			</div><!-- .product__images -->
 
 			<article class="product__description">
-
+	
 				<div class="product__title">
 					<h1>{{ Product Title }}</h1>
 					<p class="reference">{{ Product Reference }}</p>
 				</div><!-- .product__title -->
-
+				
 				<ul class="product__details">
 					<li>{{ Optional description }}</li>
 					<li><strong>Design:</strong> {{ Optional description }}</li>
 					<li><strong>Colour:</strong> {{ Optional description }}</li>
 					<li><strong>Composition:</strong> {{ Optional description }}</li>
 				</ul><!-- .product__details -->
-
+				
 				<form action="" id="" class="product__form" method="post" novalidate="novalidate">
-
+				
 					<fieldset class="product__price">
 						<p>£{{ Price }}</p>
 						<input class="button--cart" type="submit" name="submit" value="Add To Cart">
 					</fieldset>
-
+		
 					<fieldset class="product__choice">
 						<div class="css3--select">
 							<select class="" id="" name="">
@@ -136,45 +136,45 @@
 								<option value="">mm</option>
 								<option value="">cm</option>
 							</select>
-						</div>
-
+						</div>			
+						
 						<p class="form__error">Please select a unit</p>
 					</fieldset>
-
+					
 					<fieldset class="product__choice">
 						<label>Measuring Option</label>
 						<ul class="css3--radio">
-							<li><label><input id="" name="" type="radio" value="Exact"><span>Exact</span></label></li>
+							<li><label><input id="" name="" type="radio" value="Exact"><span>Exact</span></label></li>			
 							<li><label><input checked="checked" id="" name="" type="radio" value="Recess"><span>Recess</span></label></li>
 						</ul>
-
+									
 						<p class="form__error">Please select a measuring Option</p>
 					</fieldset>
-
+					
 					<fieldset class="product__choice">
 						<label>Width</label>
 						<input autocomplete="off" id="" name="" size="4" placeholder="50" type="text" value="50">
-
+		  
 					    <p class="form__error">Please provide a width measurement</p>
 					</fieldset>
-
+					
 					<fieldset class="product__choice">
 						<label>Drop</label>
 			            <input autocomplete="off" id="" name="" size="4" placeholder="90" type="text" value="90">
-
+						
 						<p class="form__error">Please provide a drop measurement</p>
 					</fieldset>
-
+					
 					<fieldset class="product__choice">
 						<label>Select Control Side</label>
 						<ul class="css3--radio">
 							<li><label><input id="" name="" type="radio" value="Left"><span>Left</span></label></li>
 							<li><label><input checked="checked" id="" name="" type="radio" value="Right"><span>Right</span></label></li>
 						</ul>
-
+											
 						<p class="form__error">Please select a control side</p>
 					</fieldset>
-
+					
 					<fieldset class="product__choice">
 						<label>Select Stack Side</label>
 						<ul class="css3--radio">
@@ -182,30 +182,30 @@
 							<li><label><input checked="checked" id="" name="" type="radio" value="Right"><span>Right</span></label></li>
 							<li><label><input id="" name="" type="radio" value="Split"><span>Split</span></label></li>
 						</ul>
-
+											
 						<p class="form__error">Please select a stack side</p>
 					</fieldset>
-
+					
 					<fieldset class="product__choice">
 						<label>Quantity</label>
 						<input autocomplete="off" id="" name="" size="4" placeholder="1" type="text" value="1">
-
+											
 						<p class="form__error">Please provide a quantity</p>
 					</fieldset>
-
+					
 					<fieldset class="product__submit">
 						<input class="button--cart colour--dark" type="submit" name="submit" value="Order Sample">
 					</fieldset>
 				</form>
-
+	
 			</article><!-- .product__description -->
 
 			<!-- START REVIEW SECTION -->
 
 			<section class="reviews">
-
+			
 				<h2>Customer reviews</h2>
-
+				
 				<div class="reviews__rating">
 					<span class="rating--stars">
 						<svg class="svg__icon"><use xlink:href="#full-star" /></svg>
@@ -214,15 +214,15 @@
 						<svg class="svg__icon"><use xlink:href="#full-star" /></svg>
 						<svg class="svg__icon"><use xlink:href="#full-star" /></svg>
 					</span>
-
+					
 					<p class="rating--summary">Based on {{ number }} reviews</p>
 					<p class="rating--write"><a href="#reviews__form">Write a review</a></p>
 				</div><!-- .reviews__rating -->
-
+				
 				<form id="reviews__form" class="reviews__form" action="" method="post" novalidate="novalidate">
-
+					 
 					 <a href="#z" class="close" title="Close this">close</a>
-
+					 
 					 <fieldset>
 						<label>Rating</label>
 						<span class="rating--stars">
@@ -232,28 +232,28 @@
 							<input id="star-2" type="radio" value="2" name="star"><label for="star-2"><svg class="svg__icon"><use xlink:href="#empty-star" /></svg></label>
 							<input id="star-1" type="radio" value="1" name="star"><label for="star-1"><svg class="svg__icon"><use xlink:href="#empty-star" /></svg></label>
 						</span>
-
+						
 						<p class="form__error">Please choose a rating</p>
 					</fieldset>
-
+					
 					<fieldset>
 						<label>Title of review</label>
 						<input value="" autocomplete="off" id="" name="" placeholder="" type="text">
 						<p class="form__error">Please add a title for the review</p>
 					</fieldset>
-
+					
 					<fieldset>
 						<label>Review</label>
 						<textarea value="" autocomplete="off" cols="20" id="" name="" placeholder="" rows="2"></textarea>
 						<p class="form__error">Please write a review</p>
 					</fieldset>
-
+					
 					<fieldset>
 						<label>Name</label>
 						<input value="" autocomplete="off" id="" name="" placeholder="" type="text">
 						<p class="form__error">Please add your name</p>
 					</fieldset>
-
+					
 					<fieldset>
 						<label>Email</label>
 						<input value="" autocomplete="off" id="" name="" placeholder="" type="text">
@@ -261,19 +261,19 @@
 						<p class="form__error">Your email addresss was not found</p>
 						<p class="form__error">Your email order was not found</p>
 					</fieldset>
-
+			
 					<fieldset>
 						<label>Order No</label>
 						<input value="" autocomplete="off" id="" name="" placeholder="" type="text">
 						<p class="form__error">Please add an order number</p>
 						<p class="form__error">Your order number was not found</p>
 					</fieldset>
-
+					
 					<fieldset>
 						<input class="button colour--text" type="submit" name="submit" value="Send Review">
 					</fieldset>
 				</form><!-- .reviews__form -->
-
+			
 				<div class="reviews__customers">
 					<article>
 						<span class="rating--stars">
@@ -283,26 +283,26 @@
 							<svg class="svg__icon"><use xlink:href="#full-star" /></svg>
 							<svg class="svg__icon"><use xlink:href="#empty-star" /></svg>
 						</span>
-
+						
 						<h3>{{ review title }}</h3>
 						<p class="reviewer">{{ person name }}</p>
 						<p>{{ review text }}</p>
 					</article>
 				</div><!-- .reviews__customers -->
-
+				
 			</section><!-- .reviews -->
 
 			<!-- END REVIEW SECTION -->
-
+		
 		</section><!-- .site__content -->
-
+	
 	</main><!-- #main -->
 
 	<!-- END MAIN CONTENT -->
 	<!-- START FOOTER -->
 
 	<footer id="colophon" class="site__footer" role="contentinfo">
-
+	
 		<div class="footer__info">
 			<nav role="navigation" aria-label="Footer Menu">
 				<ul>
@@ -313,17 +313,17 @@
 					<li><a href="../checkout.html">Checkout</a></li>
 				</ul>
 			</nav><!-- .footer__nav -->
-
+	
 			<div>
 				<p><a class="link--phone" href="tel:01509269397">01509 269397</a></p>
 				<p class="link--location">29 Moira Street, Loughborough, LE11 1AX</p>
 			</div>
-
+			
 			<img src="../images/geotrust.jpg" alt="Geo Trust Secured website">
 		</div><!-- .footer__info -->
-
-		<!--
-		The Pattern Library, Cart and Checkout links are only here for easy access to those pages to
+		
+		<!-- 
+		The Pattern Library, Cart and Checkout links are only here for easy access to those pages to 
 		test the CSS styling. The final website version should only have the Terms & Conditions link.
 		-->
 		<div class="footer__legal">
@@ -331,7 +331,7 @@
 			<p><a href="../terms-conditions.html">Terms & Conditions</a> | <a href="../patterns/index.html">Pattern Library</a> | <a href="../cart.html">Cart</a> | <a href="../checkout.html">Checkout</a></p>
 			<p class="jokedewinter"><a href="https://www.jokedewinter.co.uk" rel="external"><span class="screen-reader-text">Web design by Joke De Winter</span></a></p>
 		</div><!-- .footer__legal -->
-
+		
 	</footer><!-- .site__footer -->
 
 </div><!-- .site -->
@@ -346,7 +346,7 @@
 
 	var viewport_width = $(window).width();
 	if ( viewport_width < 600 ) {
-
+	
 		$('.product__images').slick({
 			arrows: true,
 			slidesToShow: 1,
@@ -356,9 +356,9 @@
 			prevArrow: '<button type="button" class="slick-prev"><span class="screen-reader-text">Previous</span></button>',
 			nextArrow: '<button type="button" class="slick-next"><span class="screen-reader-text">Next</span></button>',
 		});
-
+	
 	}
-
+	
 } )( jQuery );
 </script>
 

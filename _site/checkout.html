@@ -39,7 +39,7 @@
 				<img src="images/kiwi-logo.jpg" alt="Kiwi logo" />
 			</a>
 		</h1>
-
+		
 		<div>
 			<a class="link--phone" href="tel:01509269397">01509 269397</a>
 			<form action="cart.html" method="post">
@@ -50,7 +50,7 @@
 
 	<nav class="site__navigation" role="navigation" aria-label="Main Menu">
 		<button id="nav__toggle" class="nav__toggle">Menu</button>
-
+		
 		<!-- The <a> element of the current page needs to be class 'current' and 'aria-current="page"' -->
 		<ul class="nav__menu">
 			<li><a href="fabrics">Fabrics</a></li>
@@ -58,7 +58,7 @@
 			<li><a href="louvres">Louvres</a></li>
 			<li><a href="wallpaper">Wallpaper</a></li>
 			<li><a href="accessories">Accessories &amp; Parts</a></li>
-
+		
 			<li>
 				<form class="site__search" action="search.php" method="post" novalidate="novalidate">
 					<label for="searchString"><span class="screen-reader-text">Search</span></label>
@@ -68,10 +68,10 @@
 			</li>
 		</ul>
 	</nav><!-- .site__navigation -->
-
+	
 	<!-- END HEADER -->
 	<!-- START BREADCRUMBS -->
-
+	
 	<nav class="site__breadcrumbs" aria-label="Breadcrumb">
 		<!-- The <a> element of the current page needs to be class 'current' and 'aria-current="page"' -->
 		<ol>
@@ -85,44 +85,44 @@
 	<!-- START MAIN CONTENT -->
 
 	<main id="main" class="site__main" role="main">
-
+	
 	<section id="content" class="site__content">
-
+		
 		<h1>Checkout</h1>
 		<p><a class="link--cart" href="#checkout__basket">Show order summary</a></p>
-
+		
 		<section id="checkout__basket" class="checkout__basket">
-
+	
 			<h3>Shopping basket <a href="#z" class="close" title="Close this">close</a></h3>
-
+				
 			<article class="cart__item">
 				<div class="cart__item--product">
 					<h2>{{ product-title }}</h2>
 					<p class="reference">{{ product-id }}</p>
 					<p>{{ description }}</p>
 				</div><!-- .cart__item--product -->
-
+					
 				<div class="cart__item--quantity">
 					<p class="quantity__amount">{{ quantity }}</p>
 					<p class="quantity__total">£{{ total }}</p>
 				</div><!-- .cart__item--quantity -->
 			</article><!-- .cart__item -->
-
+		
 			<div class="cart__checkout">
 				<p class="amount--item"><span>Subtotal </span>£{{ subtotal }}</p>
 				<p class="amount--item"><span>Post &amp; Packaging </span>£{{ p&p }}</p>
 				<p class="amount--total"><span>Grand Total </span><strong>£{{ total }}</strong></p>
 			</div><!-- .cart__checkout -->
-
+		
 		</section><!-- .checkout__basket -->
-
+	
 		<section class="checkout__payment">
-
+			
 			<h3>PayPal Guest Checkout</h3>
 			<p>Your financial details won’t be shared with the merchant.</p>
-
+				
 			<form class="checkout__form" action="" method="post">
-
+					
 				<fieldset>
 					<label for="" id="">Country</label>
 					<div class="css3--select">
@@ -132,7 +132,7 @@
 						</select>
 					</div><!-- .css3--select -->
 				</fieldset>
-
+					
 				<fieldset>
 					<label for="" id="">Card type</label>
 					<div class="css3--select">
@@ -146,7 +146,7 @@
 						</select>
 					</div><!-- .css3--select -->
 				</fieldset>
-
+					
 				<fieldset>
 					<div>
 						<label for="" id="">Card number</label>
@@ -161,7 +161,7 @@
 						<input type="tel" name="" id="" value="" size="3" maxlength="3" required="required">
 					</div>
 				</fieldset>
-
+			
 				<fieldset>
 					<div>
 						<label for="" id="">First Name</label>
@@ -172,7 +172,7 @@
 						<input type="text" name="" id="" value="" required="required">
 					</div>
 				</fieldset>
-
+			
 				<h3>Billing Address</h3>
 				<fieldset>
 					<div>
@@ -184,12 +184,12 @@
 						<input type="text" name="" id="" value="">
 					</div>
 				</fieldset>
-
+			
 				<fieldset>
 					<label for="" id="">Town / City</label>
 					<input type="text" name="" id="" value="" required="required">
 				</fieldset>
-
+			
 				<fieldset>
 					<div>
 						<label for="" id="">County (optional)</label>
@@ -209,14 +209,14 @@
 						<input type="text" name="" id="" size="7" value="" required="required">
 					</div>
 				</fieldset>
-
+			
 				<fieldset class="css3--checkbox">
 					<label>
 						<input checked="checked" type="checkbox" name="" id="" aria-checked="true">
 						<span>Send to my billing address</span>
 					</label>
 				</fieldset>
-
+					
 				<h3>Contact information</h3>
 				<fieldset>
 					<label for="" id="">Phone number type</label>
@@ -228,33 +228,33 @@
 						</select>
 					</div><!-- .css3--select -->
 				</fieldset>
-
+					
 				<fieldset>
 					<label for="">Phone number</label>
 					<input type="tel" id="" name="" value="" maxlength="12" required="">
 				</fieldset>
-
+					
 				<fieldset>
 					<label for="">Email address</label>
 					<input type="email" id="" name="" value="" required="">
-				</fieldset>
-
-				<div class="checkout--buy">
+				</fieldset>										
+			
+				<div class="checkout--buy">	
 					<input class="button" type="submit" name="checkout" value="Pay now">
 					<img src="images/paypal.jpg" alt="Pay with PayPal">
 				</div>
 			</form>
 		</section><!-- .checkout__payment -->
-
+			
 	</section><!-- .site__content -->
-
+	
 	</main><!-- #main -->
 
 	<!-- END MAIN CONTENT -->
 	<!-- START FOOTER -->
 
 	<footer id="colophon" class="site__footer" role="contentinfo">
-
+	
 		<div class="footer__info">
 			<nav role="navigation" aria-label="Footer Menu">
 				<ul>
@@ -263,17 +263,17 @@
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</nav><!-- .footer__nav -->
-
+	
 			<div>
 				<p><a class="link--phone" href="tel:01509269397">01509 269397</a></p>
 				<p class="link--location">29 Moira Street, Loughborough, LE11 1AX</p>
 			</div>
-
+			
 			<img src="images/geotrust.jpg" alt="Geo Trust Secured website">
 		</div><!-- .footer__info -->
-
+		
 		<!-- 
-		The Pattern Library, Cart and Checkout links are only here for easy access to those pages to
+		The Pattern Library, Cart and Checkout links are only here for easy access to those pages to 
 		test the CSS styling. The final website version should only have the Terms & Conditions link.
 		-->
 		<div class="footer__legal">
@@ -281,7 +281,7 @@
 			<p><a href="terms-conditions.html">Terms & Conditions</a> | <a href="patterns/index.html">Pattern Library</a> | <a href="cart.html">Cart</a> | <a href="checkout.html">Checkout</a></p>
 			<p class="jokedewinter"><a href="https://www.jokedewinter.co.uk" rel="external"><span class="screen-reader-text">Web design by Joke De Winter</span></a></p>
 		</div><!-- .footer__legal -->
-
+		
 	</footer><!-- .site__footer -->
 
 </div><!-- .site -->
